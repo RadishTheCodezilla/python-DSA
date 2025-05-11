@@ -8,7 +8,7 @@ import turtle
 import random
 
 try:
-    import playsound  # Not part of standard Library. Install with `pip install playsound`.
+    import playsound  # type: ignore # Not part of standard Library. Install with `pip install playsound`.
 
     SOUND = config.SOUND
 except ImportError:
