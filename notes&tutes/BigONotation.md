@@ -54,8 +54,8 @@ for i in range(n):         # O(n)
     for j in range(n):     # O(n)
         print(i, j)        # O(1)
 
-Total: O(n²)
 ```
+Total: O(n²)
 
 ## 📌 Rules of Thumb
 
