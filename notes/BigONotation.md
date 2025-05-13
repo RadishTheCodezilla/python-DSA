@@ -53,3 +53,6 @@ Same concept as time complexity, but focuses on how much **additional memory** a
 for i in range(n):         # O(n)
     for j in range(n):     # O(n)
         print(i, j)        # O(1)
+
+Total: O(n²)
+        
