@@ -92,8 +92,7 @@ if __name__ == '__main__':
     ll.insert_at(1,"blueberry")
     ll.remove_at(2)
     ll.print()
-    print("Length",ll.get_length)
 
-    #ll.insert_values([45,7,12,567,99])
-    #ll.insert_at_end(67)
-    #ll.print()
+    ll.insert_values([45,7,12,567,99])
+    ll.insert_at_end(67)
+    ll.print()
