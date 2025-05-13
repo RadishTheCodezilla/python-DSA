@@ -1,7 +1,6 @@
 """
-Python Data Structures - A Game-Based Approach
+Python Data Structures 
 Reading a maze from a text file
-Robin Andrews - https://compucademy.net/
 """
 
 
