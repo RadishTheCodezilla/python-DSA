@@ -55,4 +55,89 @@ for i in range(n):         # O(n)
         print(i, j)        # O(1)
 
 Total: O(n²)
-        
+```
+
+## 📌 Rules of Thumb
+
+- **Drop constants and non-dominant terms.**
+  - `O(3n + 5)` → `O(n)`
+  - `O(n² + n)` → `O(n²)`
+- **Nested loops** → multiply their complexities.
+- **Consecutive independent operations** → take the highest.
+
+---
+
+## 📌 Big O for Common AI/Data Science Operations
+
+| Operation                          | Big O                          |
+|:----------------------------------|:--------------------------------|
+| Accessing an array element        | `O(1)`                          |
+| Linear search                     | `O(n)`                          |
+| Binary search                     | `O(log n)`                      |
+| Matrix multiplication             | `O(n³)` (or better with optimised algorithms) |
+| Sorting (QuickSort, MergeSort)    | `O(n log n)`                    |
+| k-Nearest Neighbours (brute force)| `O(n)` per query                |
+
+---
+
+## 📌 Best, Average, and Worst Case
+
+Some algorithms behave differently depending on the input.
+
+**Example:** QuickSort
+
+- **Best:** `O(n log n)`
+- **Average:** `O(n log n)`
+- **Worst:** `O(n²)`
+
+---
+
+## 📌 Big O and Neural Networks
+
+- **Training time** often depends on number of layers, neurons per layer, and dataset size.
+
+**Example:**
+
+- **Forward pass:** `O(n)` per neuron  
+- **Backpropagation:** similar or higher  
+- **Total per epoch:** depends on number of parameters and data points.
+
+**Optimising AI models often involves reducing complexity:**
+
+- Using mini-batches (instead of full-batch)
+- Dimensionality reduction (PCA, t-SNE)
+- Approximate algorithms
+
+---
+
+## 📌 Visual Intuition
+
+As `n` increases:
+
+- `O(1)` stays flat
+- `O(log n)` grows slowly
+- `O(n)` grows linearly
+- `O(n log n)` steeper than linear
+- `O(n²)` grows very fast
+- `O(2ⁿ)` and `O(n!)` explode rapidly
+
+---
+
+## 📌 Key Takeaways
+
+✅ Big O helps **compare algorithm performance**  
+✅ Focuses on how algorithms **scale with input size**  
+✅ Both **time and space complexity** matter in AI applications  
+✅ Always aim for **lower complexity algorithms** for large data problems  
+✅ Some AI-specific optimisations include **parallelisation, batching, and dimensionality reduction**
+
+---
+
+## 🎯 Pro Tip for AI Aspirants
+
+When working with AI libraries like **TensorFlow**, **PyTorch**, or **scikit-learn** — understanding underlying complexities will help you:
+
+- Choose the right algorithm for your dataset size.
+- Predict runtime and memory use.
+- Optimise bottlenecks in model training.
+
